@@ -8,6 +8,7 @@ import ChatBot from "./components/ChatBot";
 import WeatherAlert from "./components/WeatherAlert";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import PestDetection from "./components/PestDetection";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/marketPrice" element={<MarketTable />} />
         <Route path="/chatBot" element={<ChatBot />} />
         <Route path="/weatherAlert" element={<WeatherAlert />} />
+        <Route path="/pestDetect" element={<PestDetection />} />
       </Routes>
       <Footer />
     </Router>

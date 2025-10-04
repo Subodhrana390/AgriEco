@@ -208,14 +208,14 @@ const WeatherAlert = () => {
           </div>
 
           {/* Main Weather Card */}
-          <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-6">
+          {/* <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm mb-6">
             <div className="flex items-center justify-between mb-4">
               <div>
                 <div className="text-3xl font-bold text-blue-600">
                   {weatherData.tempC}°C
                 </div>
                 <div className="text-lg text-gray-500">
-                  {celsiusToFahrenheit(weatherData.tempC)}°F
+                  {celsiusToFahrenheit(Number(weatherData.tempC.toFixed(3)))}°F
                 </div>
                 <div className="text-sm text-gray-400 mt-1">
                   {getWeatherCondition(weatherData.tempC)}
@@ -228,10 +228,10 @@ const WeatherAlert = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Temperature Range */}
-          <div className="grid grid-cols-2 gap-4 mb-6">
+          {/* <div className="grid grid-cols-2 gap-4 mb-6">
             <div className="bg-white rounded-lg p-4 border border-gray-200">
               <div className="flex items-center text-green-600 mb-2">
                 <svg
@@ -271,7 +271,7 @@ const WeatherAlert = () => {
                 {weatherData.minTempC}°C
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Weather Details Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
